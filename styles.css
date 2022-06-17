@@ -10,14 +10,37 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-image: url(./images/adam-birkett-75EFpyXu3Wg-unsplash.jpg);
     background-size: 880px 100%;
-    height: 100%;
+    height: 100vh;
+}
 
+header {
+    padding-top: 150px;
+    font-size: clamp(1rem, 2vw, 18px)
+}
+
+.headline-main-text {
+    margin-bottom: 2em;
+    line-height: 2.5rem;
 }
 
 
 .hero-area {
     width: 40%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    background-color: rgba(15, 13, 13, 0.31);
+    position: relative;
+    top: 30%;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2.5rem;
 }
 
 .form-area {
@@ -25,15 +48,20 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: bisque;
+    background-color: rgb(255, 255, 255);
     width: 60%;
-    height: 100vh;
-    min-height: 500px;
+    /* height: 100vh; */
+    /* min-height: 500px; */
+}
 
+.container {
+    width: 80%;
 }
 
 form {
-    width: 80%;
+    /* border: 1px solid #000; */
+    margin-top: 50px;
+
 }
 
 .form-row {
@@ -45,7 +73,7 @@ form {
 .input-box {
     display: inline-block;
     flex: 1;
-    font-size: clamp(1vw, 2vw, 18px)
+    font-size: clamp(1rem, 2vw, 18px)
     
 }
 
@@ -58,6 +86,16 @@ input {
     height: 40px;
 }
 
+.credit {
+    color: white;
+}
+
+a {
+    text-decoration:underline;
+    color:inherit;
+    
+}
+
 
 @media only screen and (max-width: 830px) {
 
@@ -66,6 +104,11 @@ input {
         background-size: 400px 100%;
 
     }
+
+    header {
+        padding-top: 50px;
+    }
+
 
     .hero-area {
         background-image: url(./images/adam-birkett-75EFpyXu3Wg-unsplash.jpg);
