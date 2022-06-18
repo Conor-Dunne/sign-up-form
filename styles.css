@@ -11,8 +11,9 @@ html {
 body {
     display: flex;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background-image: url(./images/adam-birkett-75EFpyXu3Wg-unsplash.jpg);
-    background-size: 50% 100%;
+    background-image: url(./images/guzman-barquin-txZsxZJNxnw-unsplash\ \(1\).jpg);
+    background-size:clamp(696px, 50% , 60%) 100%;
+    background-repeat: no-repeat;
     height: 100%;
 }
 
@@ -34,6 +35,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
 #logo {
@@ -121,8 +123,9 @@ a {
 
 
     .hero-area {
-        background-image: url(./images/smaller.jpg);
-        background-size: 100% 100%;
+        background-image: url(./images/guzman-barquin-txZsxZJNxnw-unsplash\ \(1\).jpg);
+        background-size: cover;
+        background-position: center center;
         width: 100%;
         height: 300px;
     }
@@ -139,6 +142,10 @@ a {
 
     .input-box {
         display: block;
+    }
+
+    footer {
+        font-size: 3vw;
     }
 
 }
