@@ -23,7 +23,7 @@ body {
     height: 100%;
 }
 
-h1 {
+.headline-main-text h1 {
     font-size: 5rem;
     margin-bottom: 30px;
     line-height: 1;
@@ -53,10 +53,12 @@ header {
 #logo {
     font-family: "Miami";
     letter-spacing: 7px;
+    text-shadow: 8px 9px 6px black;
     background-color: rgba(15, 13, 13, 0.31);
     position: relative;
     top: 30%;
     width: 100%;
+    padding: 25px 0;
     color: whitesmoke;
     text-align: center;
     font-size: 2.5rem;
@@ -134,7 +136,7 @@ button[type="submit"] {
   }
 
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 1160px) {
 
     body {
         flex-direction: column;
@@ -142,8 +144,8 @@ button[type="submit"] {
         background-image:none;
     }
 
-    h1 {
-        font-size: 3.5rem;
+    .headline-main-text h1 {
+        font-size: 3rem;
     }
 
     header {
