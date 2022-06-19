@@ -153,7 +153,7 @@ button[type="submit"] {
     }
 
     #logo {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
 
@@ -182,7 +182,7 @@ button[type="submit"] {
     
 
     footer {
-        font-size: 3vw;
+        font-size: calc(0.2rem + 1vw);
     }
 
     button[type="submit"] {
