@@ -10,17 +10,17 @@
     box-sizing: border-box;
 }
 
-html {
-    min-width: 320px;
-}
+
 
 body {
+    min-height: 100vh;
+    min-width: 320px;
     display: flex;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-image: url(./images/guzman-barquin-txZsxZJNxnw-unsplash\ \(1\).jpg);
     background-size:clamp(696px, 50% , 60%) 100%;
     background-repeat: no-repeat;
-    height: 100%;
+    
 }
 
 .headline-main-text h1 {
@@ -55,8 +55,9 @@ header {
     letter-spacing: 7px;
     text-shadow: 8px 9px 6px black;
     background-color: rgba(15, 13, 13, 0.31);
-    position: relative;
-    top: 30%;
+    /* position: relative;
+    top: 30%; */
+    margin-top: 300px;
     width: 100%;
     padding: 25px 0;
     color: whitesmoke;
@@ -106,12 +107,22 @@ label {
 input {
     width: 100%;
     height: 40px;
+    padding: 1px;
+    font-size: 1rem;
     background-color: #ffffff;
     border: 1px solid #bbbbbb;
     border-radius: 5px;
-    color: #ffffff;
+    color: #000000;
 }
 
+input:focus {
+    outline: 1px solid #e9a540;
+}
+
+input[type="email"]:invalid,
+input[type="tel"]:invalid {
+    outline: 1px solid red;
+}
 
 .credit {
     color: white;
@@ -135,7 +146,10 @@ button[type="submit"] {
     border-radius: 5px;
   }
 
-
+  #check {
+      margin-top: 10px;
+      text-align: right;
+  }
 @media only screen and (max-width: 1160px) {
 
     body {
@@ -154,6 +168,7 @@ button[type="submit"] {
 
     #logo {
         font-size: 2rem;
+        margin-top: 100px;
     }
 
 
@@ -162,7 +177,7 @@ button[type="submit"] {
         background-size: cover;
         background-position: center center;
         width: 100%;
-        height: 300px;
+        min-height: 300px;
     }
     
     

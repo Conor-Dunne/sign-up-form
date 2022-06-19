@@ -30,7 +30,7 @@
                     <h2><em>You know you want to...</em></h2>
                 </div>
             </header>
-            <form action="#" method="post">
+            <form>
                 <div class="main-form">
                     <div class="form-row">
                         <div class="input-box">
@@ -55,19 +55,41 @@
                     <div class="form-row">
                         <div class="input-box">
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" required>
                         </div>
                         <div class="input-box">
                             <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-password" name="confirm-password">
+                            <input type="password" id="confirm-password" name="confirm-password" required>
                         </div>
                     </div>
+                    <div id="check"></div>
                 </div>
-                <button type="submit">Sign-up</button>
+                <button type="submit" id="sign-up">Sign-up</button>
             </form>
         </div>
     </div>
 </body>
-<!-- Photo by Adam Birkett on Unsplash
-https://unsplash.com/photos/75EFpyXu3Wg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink -->
+<script>
+    const password = document.querySelector("#password");
+    const confirm_password = document.querySelector("#confirm-password");
+    const check = document.querySelector("#check");
+
+    confirm_password.addEventListener("input", passwordMatch );
+
+    function passwordMatch() {
+        
+
+       if (confirm_password.value != password.value) {
+        console.log(password.value);   
+        console.log(confirm_password.value);
+           check.textContent = "passwords don't match";
+           check.style.color = "red";
+           confirm_password.style.outline = "1px solid red";
+       } else if (confirm_password.value === password.value) {
+        check.textContent = "OK";
+        check.style.color = "green";
+        confirm_password.style.outline = "1px solid green";
+    }
+}
+</script>
 </html>
