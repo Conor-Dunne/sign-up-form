@@ -119,10 +119,6 @@ input:focus {
     outline: 1px solid #e9a540;
 }
 
-input[type="email"]:invalid,
-input[type="tel"]:invalid {
-    outline: 1px solid red;
-}
 
 .credit {
     color: white;
