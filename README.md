@@ -1,4 +1,4 @@
-# sign-up-form
+# sign-up form
 An example sign-up form with form validation
 
 ![Screenshot](https://github.com/Conor-Dunne/sign-up-form/blob/main/images/sigin-up-form-screenshot.png)
