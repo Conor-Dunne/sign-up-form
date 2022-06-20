@@ -7,10 +7,10 @@ An example sign-up form with form validation
 
 ## Features
 - Form validation
-- responsive design
+- Responsive design
 
 ## About
-- A example sign-up form with validation for correct email and format and matching passwords. ]
+- An example sign-up form with validation for correct email format and matching passwords. 
 - Mobile friendly
 
 ### Built With
