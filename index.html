@@ -75,13 +75,15 @@
     const check = document.querySelector("#check");
 
     confirm_password.addEventListener("input", passwordMatch );
+    password.addEventListener("input", passwordMatch );
 
     function passwordMatch() {
         
-
-       if (confirm_password.value != password.value) {
-        console.log(password.value);   
-        console.log(confirm_password.value);
+        if (password.value === "" || confirm_password.value === "" ) {
+            check.textContent = "";
+           confirm_password.style.outline = "1px solid #bbbbbb";
+        }
+       else if (confirm_password.value != password.value) {
            check.textContent = "passwords don't match";
            check.style.color = "red";
            confirm_password.style.outline = "1px solid red";
